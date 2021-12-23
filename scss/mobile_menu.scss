@@ -1,0 +1,331 @@
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+$color1: #f3861a;
+
+.ForBagStyle.css {
+  font-size: 1;
+}
+
+.mobile-style {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.mobile-style__wrapper {
+  width: 100%;
+  height: auto;
+  background-color: $color1;
+  font-family: $Rubik;
+}
+
+.mobile-style__catalog {
+  border-top: 1px solid rgba(128, 128, 128, 0.281);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+  position: relative;
+}
+
+.mobile-style__title {
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+  cursor: pointer;
+}
+
+.mobile-style__about-title {
+  @extend .mobile-style__title;
+}
+
+.mobile-style__share-title {
+  @extend .mobile-style__title;
+  padding-left: 10px;
+}
+
+.mobile-style__item--dog:before {
+  background: url(../images/icons8-dog-50.png) no-repeat center center;
+}
+
+.mobile-style__item--cat:before {
+  background: url(../images/icons8-cat-50.png) no-repeat center center;
+}
+
+.mobile-style__item--bird:before {
+  background: url(../images/icons8-flying-duck-50.png) no-repeat center center;
+}
+
+.mobile-style__item--rodent:before {
+  background: url(../images/icons8-rat-silhouette-50.png) no-repeat center
+    center;
+}
+
+.mobile-style__item--fish:before {
+  background: url(../images/icons8-pike-50.png) no-repeat center center;
+}
+
+.mobile-style__item--reptile:before {
+  background: url(../images/icons8-rattlesnake-50.png) no-repeat center center;
+}
+
+.mobile-style__item--other:before {
+  background: url(../images/icons8-frog-face-50.png) no-repeat center center;
+}
+
+.mobile-style__image1,
+.mobile-style__image2,
+.mobile-style__image3,
+.mobile-style__image4,
+.mobile-style__image5,
+.mobile-style__image6,
+.mobile-style__image7,
+.mobile-style__image8 {
+  transition: 1s;
+}
+
+.mobile-style__item {
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  color: wheat;
+  font-size: 17px;
+  font-weight: 500;
+  padding: 13px 20px 13px 20px;
+  background-color: #d17519;
+  border-bottom: 1px solid rgba(168, 147, 147, 0.432);
+  &:hover {
+    background-color: $color1;
+    color: white;
+  }
+  &:before {
+    content: '';
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 30%;
+    top: 1px;
+  }
+  img {
+    position: absolute;
+    transform: rotate(-90deg);
+    left: 65%;
+  }
+}
+
+.mobile-style__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-style__item--drugs:before {
+  background: url(../images/icons8-pills-64.png) no-repeat center center;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+  top: 7px;
+  left: 30%;
+}
+
+.mobile-style__feed {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-style__health {
+  @extend .mobile-style__feed;
+}
+
+.mobile-style__other {
+  @extend .mobile-style__feed;
+}
+
+.mobile-style__feed-text {
+  color: $color1;
+  font-size: 20px;
+  text-align: center;
+  &:hover {
+    color: #aa5b0c;
+  }
+}
+
+.mobile-style__feed-title {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+
+.mobile-style__dog-drop {
+  background: url(../images/backgroundFooter.png) no-repeat center center;
+  background-size: cover;
+  padding: 10px;
+  display: none
+}
+
+.mobile-style__cat-drop,
+.mobile-style__bird-drop,
+.mobile-style__rodent-drop,
+.mobile-style__fish-drop,
+.mobile-style__reptile-drop,
+.mobile-style__other-drop,
+.mobile-style__drugs-drop {
+  @extend .mobile-style__dog-drop;
+}
+
+.mobile-style__content {
+  display: none;
+}
+
+.mobile-style__about-container {
+  background: url(../images/backgroundFooter.png) repeat center center;
+  background-size: contain;
+}
+
+.mobile-style__text--active {
+  font-size: 18px;
+  color: $color1;
+  display: block;
+  padding: 20px 0px 0px 10px;
+}
+
+.mobile-style__text {
+  padding: 0px 10px 10px 10px;
+  text-align: justify;
+  font-size: 15px;
+}
+
+.mobile-style__img {
+  width: 80%;
+  height: auto;
+}
+
+.mobile-style__flex-img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-style__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.mobile-style__about-container {
+  display: none;
+}
+
+.mobile-style__about-us {
+  position: relative;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+}
+
+.mobile-style__share-container {
+  background: url(../images/backgroundFooter.png) repeat center center;
+  background-size: contain;
+}
+
+.mobile-style__share-image {
+  width: 500px;
+  height: 250px;
+  display: block;
+  padding: 10px 0px 10px 0px;
+}
+
+.mobile-style__share-images {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+.mobile-style__share-span {
+  text-align: center;
+  display: block;
+  margin-bottom: -10px;
+  font-size: 18px;
+  color: $color1;
+}
+
+.mobile-style__share-images {
+  border-top: 1px solid rgba(128, 128, 128, 0.281);
+}
+
+.mobile-style__share-text {
+  padding: 10px;
+  text-align: justify;
+}
+
+.mobile-style__share-container {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+}
+
+.mobile-style__share-container {
+  display: none;
+}
+
+.mobile-style__share {
+  position: relative;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.281);
+}
+
+.open {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 10px;
+  background-color: rgba(128, 128, 128, 0.281);
+  border-radius: 7px 7px 0px 0px;
+  font-family: $Rubik;
+}
+
+.open__menu {
+  @extend .open;
+  top: 75%;
+}
+
+.mobile-style__search {
+  width: 100%;
+  height: 60px;
+  border: 3px solid $color1;
+  padding: 10px;
+  position: relative;
+}
+
+.mobile-style__search-form {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+}
+
+.mobile-style__search-input {
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  outline: none;
+  border: 1px solid $color1;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.mobile-style__search-btn {
+  background: $color1 url(../images/search__img.ico) center no-repeat;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  background-color: white;
+}

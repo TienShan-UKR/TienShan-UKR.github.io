@@ -1,0 +1,114 @@
+$color1: #f3861a;
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagination__list {
+    margin-left: 300px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+    width: auto;
+    height: auto;
+    border-radius: 50px;
+    border: 1px solid $color1;
+}
+
+.pagination__item {
+    margin-left: 3px;
+    transition: all 0.3s ease;
+    list-style: none;
+    line-height: 45px;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-family: $Rubik;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 50%;
+    &:hover {
+        background-color: $color1;
+        color: white;
+    }
+}
+
+.forPagin {
+    background-color: $color1;
+    color: white;
+}
+
+
+.pagination__arrow {
+    @extend .pagination__item;
+}
+
+
+
+.pagination__arrow--arr-left {
+    width: 80px;
+    margin-right: 5px;
+    padding-left: 30px;
+    border-radius: 25px 5px 5px 25px;
+    &:hover {
+        background-color: $color1;
+        border-radius: 25px 5px 5px 25px;
+        color: white;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        background: url(../images/caret-icon.svg) no-repeat center center;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        top: 15px;
+        left: 10px;
+        transform: rotate(180deg);
+    }
+}
+
+.forHoverPrev {
+    background-color: white !important;
+    border-radius: 25px 5px 5px 25px !important;
+    color: black !important;
+}
+
+.forHoverNext {
+    background-color: white !important;
+    border-radius: 5px 25px 25px 5px !important;
+    color: black !important;
+}
+
+.pagination__arrow--arr-right {
+    position: relative;
+    margin-left: 5px;
+    width: 80px;
+    padding-right: 30px;
+    border-radius: 5px 25px 25px 5px;
+    &:hover {
+        background-color: $color1;
+        border-radius: 5px 25px 25px 5px;
+        color: white;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background: url(../images/caret-icon.svg) no-repeat center center;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        left: 50px;
+    }
+}

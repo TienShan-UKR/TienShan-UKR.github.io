@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/simplebar.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/simplebar.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="header__top-inner header__top-inner--burger">
+                <div class="header__responsive">
+                    <div class="open__menu">відкрити</div>
+                    <div class="header__responsive-text">Меню</div>
+                    <img class="header__responsive-img" src="images/menu.png" alt="">
+                </div>
+                <div class="header__responsive-window">
+                    <div class="header__search">
+                        <form class="header__search-form" action="#">
+                            <input class="header__search-input" type="text" name="" id="" placeholder="Знайти">
+                            <button class="header__search-btn"></button>
+                        </form>
+                    </div>
+                    <div class="header__contact">
+                        <div class="header__contacts responsive">Контакти<img src="images/caret-icon.svg" alt=""
+                                class="header__contacts-img"></div>
+                        <div class="header__dropdown-contacts">
+                            <div class="header__dropdown-phone">+38 (093) 411 89 62</div>
+                            <div class="header__dropdown-viber">+38 (063) 452 98 11</div>
+                            <div class="header__dropdown-address">вулиця Брацлавська, 35</div>
+                            <div class="header__dropdown-time"><b>Години роботи:</b><br>
+                                пн-пт з 08:00 до 21:00<br>
+                                сб-нд - вихідні дні.
+                            </div>
+                            <div class="header__call">
+                                <button class="header__call-btn">Заказать звонок</button>
+                                <div class="header__call-form">
+                                    <div class="header__form-close">x</div>
+                                    <span class="header__call-text">Напишите номер телефона</span>
+                                    <input type="tel" name="Телефон" class="header__call-input"
+                                        placeholder="+38 (___)___-__-__">
+                                    <button class="header__call-me">Позвонить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="header__to-catalog" href="index.html#catalog">
+                        <div class="header__catalog responsive">Каталог</div>
+                    </a>
+                    <div class="header__drop-favorite">
+                        <div class="header__favorite responsive">Обране<span class="header__favorite-quantity">0</span>
+                        </div>
+                        <div class="header__dropdown-favorite" data-simplebar>
+                            <div class="header__empty">
+                                <span class="header__empty-text">Уподобання<br>пусті</span>
+                                <img src="images/favorite.png" alt="" class="header__empty-img">
+                            </div>
+                            <ul class="header__dropdown-favorite-list" data-simplebar></ul>
+                        </div>
+                    </div>
+                    <div class="header__entrance responsive">Кабінет</div>
+                    <div class="header__сart-all">
+                        <div class="header__сart responsive">Кошик<span class="header__cart-quantity">0</span>
+                            <div class="header__cart-content">
+                                <ul class="header__cart-content-list" data-simplebar></ul>
+                                <div class="header__cart-contentBottom">
+                                    <div class="header__cart-conten-bottom">
+                                        <div class="header__cart-content-fullPrice">
+                                            <span>Всього:</span>
+                                            <span class="fullPrice">900 грн</span>
+                                        </div>
+                                        <button class="header__cart-contentBottom-btn" data-path="modal"
+                                            data-animation="fadeInUp">Оформити</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--TODO:-->
+        <div class="mobile-style">
+            <div class="mobile-style__wrapper">
+                <div class="mobile-style__items">
+                    <div class="mobile-style__catalog">
+                        <div class="open">відкрити</div>
+                        <a class="mobile-style__title">Каталог</a>
+                        <div class="mobile-style__content">
+                            <div class="mobile-style__item mobile-style__item--dog"><img src="images/caret-icon.svg"
+                                    alt="" class="mobile-style__image1">Собаки</div>
+                            <div class="mobile-style__dog-drop">
+                                <div class="mobile-style__feed">
+                                    <div class="mobile-style__feed-title">Корми</div>
+                                    <a href="#" class="mobile-style__feed-text">Сухий корм для собак</a>
+                                    <a href="#" class="mobile-style__feed-text">Консерви для собак</a>
+                                    <a href="#" class="mobile-style__feed-text">Кісточки та смакоти</a>
+                                    <a href="#" class="mobile-style__feed-text">Лікувальні корми</a>
+                                </div>
+                                <div class="mobile-style__health">
+                                    <div class="mobile-style__feed-title">Здоров’я</div>
+                                    <a href="#" class="mobile-style__feed-text">Вітаміни для собак</a>
+                                    <a href="#" class="mobile-style__feed-text">Засіб від блохів і кліщів</a>
+                                    <a href="#" class="mobile-style__feed-text">Засіб від глистів</a>
+                                </div>
+                                <div class="mobile-style__other">
+                                    <div class="mobile-style__feed-title">Інше</div>
+                                    <a href="#" class="mobile-style__feed-text">Аксесуари для собак</a>
+                                    <a href="#" class="mobile-style__feed-text">Амуніція для собак</a>
+                                    <a href="#" class="mobile-style__feed-text">Іграшки для собак</a>
+                                </div>
+                            </div>
+                            <div class="mobile-style__item mobile-style__item--cat"><img src="images/caret-icon.svg"
+                                    alt="" class="mobile-style__image2">Кішки</div>
+                            <div class="mobile-style__cat-drop">
+                                <div class="mobile-style__feed">
+                                    <div class="mobile-style__feed-title">Корми</div>
+                                    <a href="#" class="mobile-style__feed-text">Сухий корм для котів</a>
+                                    <a href="#" class="mobile-style__feed-text">Консерви для котів</a>
+                                    <a href="#" class="mobile-style__feed-text">Ласощі</a>
+                                    <a href="#" class="mobile-style__feed-text">Лікувальні корми</a>
+                                </div>
+                                <div class="mobile-style__health">
+                                    <div class="mobile-style__feed-title">Здоров’я</div>
+                                    <a href="#" class="mobile-style__feed-text">Вітаміни для котів</a>
+                                    <a href="#" class="mobile-style__feed-text">Засіб від блохів і кліщів</a>
+                                    <a href="#" class="mobile-style__feed-text">Засіб від глистів</a>
+                                </div>
+                                <div class="mobile-style__other">
+                                    <div class="mobile-style__feed-title">Інше</div>
+                                    <a href="#" class="mobile-style__feed-text">Аксесуари для котів</a>
+                                    <a href="#" class="mobile-style__feed-text">Амуніція для котів</a>
+                                    <a href="#" class="mobile-style__feed-text">Іграшки для котів</a>
+                                </div>
+                            </div>
+                            <div class="mobile-style__item mobile-style__item--bird"><img src="images/caret-icon.svg"
+                                    alt="" class="mobile-style__image3">Птиці</div>
+                            <div class="mobile-style__bird-drop">
+                                <div class="mobile-style__feed">
+                                    <div class="mobile-style__feed-title">Корми</div>
+                                    <a href="#" class="mobile-style__feed-text">Корм для птахів</a>
+                                    <a href="#" class="mobile-style__feed-text">Ласощі</a>
+                                </div>
+                                <div class="mobile-style__health">
+                                    <div class="mobile-style__feed-title">Здоров’я</div>
+                                    <a href="#" class="mobile-style__feed-text">Вітаміни</a>
+                                    <a href="#" class="mobile-style__feed-text">Вітаміни для птахів</a>
+                                </div>
+                                <div class="mobile-style__other">
+                                    <div class="mobile-style__feed-title">Інше</div>
+                                    <a href="#" class="mobile-style__feed-text">Клітки для птахів</a>
+                                    <a href="#" class="mobile-style__feed-text">Аксесуари для пташиних кліток</a>
+                                    <a href="#" class="mobile-style__feed-text">Годівниці для птахів</a>
+                                    <a href="#" class="mobile-style__feed-text">Поїлки для птахів</a>
+                                </div>
+                            </div>
+                            <div class="mobile-style__item mobile-style__item--rodent"><img src="images/caret-icon.svg"
+                                    alt="" class="mobile-style__image4">Гризуни</div>
+                            <div class="mobile-style__rodent-drop">
+                                <div class="mobile-style__feed">
+                                    <div class="mobile-style__feed-title">Корми</div>
+                                    <a href="#" class="mobile-style__feed-text">Корм для гризунів</a>
+                                    <a href="#" class="mobile-style__feed-text">Ласощі для гризунів</a>
+                                    <a href="#" class="mobile-style__feed-text">Сіно для гризунів</a>
+                                </div>
+                                <div class="mobile-style__health">
+                                    <div class="mobile-style__feed-title">Здоров’я</div>
+                                    <a href="#" class="mobile-style__feed-text">Вітаміни</a>
+                                    <a href="#" class="mobile-style__feed-text">Вітаміни для гризунів</a>
+                                    <a href="#" class="mobile-style__feed-text">Засоби від бліх і кліщів</a>
+                                </div>
+                                <div class="mobile-style__other">
+                                    <div class="mobile-style__feed-title">Інше</div>
+                                    <a href="#" class="mobile-style__feed-text">Клітки для гризунів</a>
+                                    <a href="#" class="mobile-style__feed-text">Аксесуари для гризунів</a>
+                                </div>
+                            </div>
+                            <div class="mobile-style__item mobile-style__item--fish"><img src="images/caret-icon.svg"
+                                    alt="" class="mobile-style__image5">Рибки</div>
+                            <div class="mobile-style__fish-drop">
+                                <div class="mobile-style__feed">
+                                    <div class="mobile-style__feed-title">Корми</div>
+                                    <a href="#" class="mobile-style__feed-text">Сухий корм для риб</a>
+                                    <a href="#" class="mobile-style__feed-text">Живий корм для риб</a>
+                                </div>
+                                <div class="mobile-style__health">
+                                    <div class="mobile-style__feed-title">Здоров’я</div>
+                                    <a href="#" class="mobile-style__feed-text">Терморегулятори для акваріума</a>
+                                    <a href="#" class="mobile-style__feed-text">Акваріумна хімія</a>
+                                </div>
+                                <div class="mobile-style__other">
+                                    <div class="mobile-style__feed-title">Інше</div>
+                                    <a href="#" class="mobile-style__feed-text">Акваріуми для рибок</a>
+                                    <a href="#" class="mobile-style__feed-text">Фільтри для акваріума</a>
+                                    <a href="#" class="mobile-style__feed-text">Компресори для акваріума</a>
+                                    <a href="#" class="mobile-style__feed-text">Лампи для аквариума</a>
+                                </div>
+                            </div>
+                            <div class="mobile-style__item mobile-style__item--reptile"><img src="images/caret-icon.svg"
+                                    alt="" class="mobile-style__image6">Рептилії</div>
+                            <div class="mobile-style__reptile-drop">
+                                <div class="mobile-style__feed">
+                                    <div class="mobile-style__feed-title">Корми</div>
+                                    <a href="#" class="mobile-style__feed-text">Корм для риптилії</a>
+                                    <a href="#" class="mobile-style__feed-text">Корм для риптилій живий</a>
+                                </div>
+                                <div class="mobile-style__health">
+                                    <div class="mobile-style__feed-title">Здоров’я</div>
+                                    <a href="#" class="mobile-style__feed-text">Терморегулятори для тераріумів</a>
+                                    <a href="#" class="mobile-style__feed-text">Прикраси для тераріумів</a>
+                                    <a href="#" class="mobile-style__feed-text">Вітаміни для рептилій</a>
+                                </div>
+                                <div class="mobile-style__other">
+                                    <div class="mobile-style__feed-title">Інше</div>
+                                    <a href="#" class="mobile-style__feed-text">Тераріуми для риптилій</a>
+                                    <a href="#" class="mobile-style__feed-text">Наповнювачі</a>
+                                    <a href="#" class="mobile-style__feed-text">Освітлення</a>
+                                </div>
+                            </div>
+                            <div class="mobile-style__item mobile-style__item--other"><img src="images/caret-icon.svg"
+                                    alt="" class="mobile-style__image7">Інші тварини</div>
+                            <div class="mobile-style__other-drop">
+                                <div class="mobile-style__feed">
+                                    <div class="mobile-style__feed-title">Корми</div>
+                                    <a href="#" class="mobile-style__feed-text">Корм для ставкової риби</a>
+                                    <a href="#" class="mobile-style__feed-text">Корм для тхорів</a>
+                                </div>
+                                <div class="mobile-style__health">
+                                    <div class="mobile-style__feed-title">Здоров’я</div>
+                                    <a href="#" class="mobile-style__feed-text">Хімія для ставків</a>
+                                    <a href="#" class="mobile-style__feed-text">Аксесуари для тхорів</a>
+                                    <a href="#" class="mobile-style__feed-text">Вітаміни для тхорів</a>
+                                </div>
+                                <div class="mobile-style__other">
+                                    <div class="mobile-style__feed-title">Інше</div>
+                                    <a href="#" class="mobile-style__feed-text">Освітлення ставка</a>
+                                    <a href="#" class="mobile-style__feed-text">Ґрунти для ставків</a>
+                                    <a href="#" class="mobile-style__feed-text">Обладнання для ставків</a>
+                                </div>
+                            </div>
+                            <div class="mobile-style__item mobile-style__item--drugs"><img src="images/caret-icon.svg"
+                                    alt="" class="mobile-style__image8">Ветпрепарати</div>
+                            <div class="mobile-style__drugs-drop">
+                                <div class="mobile-style__other">
+                                    <div class="mobile-style__feed-title">Ветпрепарати</div>
+                                    <a href="#" class="mobile-style__feed-text">Від глистів</a>
+                                    <a href="#" class="mobile-style__feed-text">Засоби від бліх і кліщів</a>
+                                    <a href="#" class="mobile-style__feed-text">Ветеринарні інструменти, матеріали і
+                                        т.д.</a>
+                                    <a href="#" class="mobile-style__feed-text">Для анестезії та заспокійливе</a>
+                                    <a href="#" class="mobile-style__feed-text">Для вух</a>
+                                    <a href="#" class="mobile-style__feed-text">Для очей</a>
+                                    <a href="#" class="mobile-style__feed-text">Протизапальні засоби</a>
+                                    <a href="#" class="mobile-style__feed-text">Протигрибкові засоби</a>
+                                    <a href="#" class="mobile-style__feed-text">Антибіотики</a>
+                                    <a href="#" class="mobile-style__feed-text">Вітаміни</a>
+                                    <a href="#" class="mobile-style__feed-text">Вакцини</a>
+                                    <a href="#" class="mobile-style__feed-text">Шампуні, мило</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-style__about-us">
+                        <div class="open">відкрити</div>
+                        <div class="mobile-style__about-title">Про нас</div>
+                        <div class="mobile-style__about-container">
+                            <div class="mobile-style__text">
+                                <span class="mobile-style__text--active">Чем популярен интернет-магазин зоотоваров
+                                    "LESSI"?</span><br>
+                                Забота о животных выражается не только в ласке, но и качественном уходе, который
+                                включает
+                                полноценное питание, регулярные гигиенические процедуры и медицинское обслуживание
+                                домашних
+                                любимцев, поэтому в ассортименте интернет-зоомагазина "LESSI" есть все необходимые для
+                                этого
+                                товары. У нас вы найдете корма, уходовые средства, витамины, важнейшие медикаменты,
+                                оборудование
+                                для обустройства персонального уголка животного, игрушки, удобные переноски, посуда и
+                                прочие
+                                нужные в быту вещи, которые пригодятся для комфортного существования вашего любимца<br>
+                                <span class="mobile-style__text--active">Для каких животных рассчитан каталог товаров
+                                    "LESSI"?</span><br>
+                                Интернет-магазин зоотоваров "LESSI" удовлетворит запросы владельцев следующих животных:
+                                <ul>
+                                    <li>собак;</li>
+                                    <li>кошек;</li>
+                                    <li>птиц;</li>
+                                    <li>харьков;</li>
+                                    <li>рептилий и обитателей террариума;</li>
+                                    <li>лошадей;</li>
+                                    <li>различных грызунов;</li>
+                                    <li>аквариумных рыбок.</li>
+                                </ul>
+                                Спецпредложения и акционные цены нашего интернет-магазина позволят вам экономить на
+                                покупках,
+                                поэтому вы сможете баловать ваших любимцев новыми игрушками, вкусными лакомствами и
+                                прочими
+                                приятными вещами без ущерба для кошелька. Выбрав и купив товар, вы гарантировано
+                                получите
+                                быструю доставку покупки по указанному адресу. Большой ассортимент продукции на данном
+                                сайте
+                                постоянно пополняется актуальными на зоорынке позициями, так как наши менеджеры
+                                отслеживают
+                                появление новинок от ведущих производителей зоотоваров. Компания "LESSI" предлагает
+                                только
+                                самый качественный товар - у нас вы не найдете подделок и будете уверены в
+                                оригинальности
+                                приобретаемой продукции.<br>
+
+                                <span class="mobile-style__text--active">Почему некоторым животным необходим особенный
+                                    уход?</span><br>
+                                Среди экзотических птиц, грызунов, собак или кошек существуют очень редкие породы,
+                                требующие
+                                тщательного контроля питания, температуры воздуха или воды, а также соблюдения
+                                определенных
+                                условий проживания в доме. Все необходимые для этого атрибуты готов предоставить
+                                интернет-магазин зоотоваров "LESSI". Уход за ослабленными животными также включает свои
+                                нюансы:
+                                диетический корм, прием лекарств, витаминов и пищевых добавок, особенные гигиенические
+                                процедуры
+                                и т. д. Кроме того, здоровые “младшие друзья” могут доставить немало хлопот хозяевам
+                                ввиду
+                                своего природного поведения, а решить эти проблемы вам поможет наш интернет-магазин
+                                зоотоваров.
+                                Ликвидаторы неприятных запахов, когтеточки, средства от блох и клещей избавят вас от
+                                неприятных
+                                моментов, которые мешают вам общаться с вашими любимцами!
+                            </div>
+                            <div class="mobile-style__flex-img">
+                                <div class="mobile-style__images"><img src="images/about-img2.jpg" alt=""
+                                        class="mobile-style__img">
+                                </div>
+                                <div class="mobile-style__images"><img src="images/about-img3.jpg" alt=""
+                                        class="mobile-style__img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-style__share">
+                        <div class="open">відкрити</div>
+                        <div class="mobile-style__share-title">Акції</div>
+                        <div class="mobile-style__share-container">
+                            <div class="mobile-style__share-item">
+                                <div class="mobile-style__share-images">
+                                    <img src="images/share-img1.webp" alt="" class="mobile-style__share-image">
+                                </div>
+                                <div class="mobile-style__share-text"><span class="mobile-style__share-span">Акция!
+                                        Josera -15%</span><br>
+                                    Акция! Josera -15%
+                                    Josera Dog Kids Сухой корм для щенков средних и крупных пород 15 кг
+                                    Josera Leger Adult Cухой корм для кошек с сниженными потребностями энергии 10 кг
+                                </div>
+                            </div>
+                            <div class="mobile-style__share-item">
+                                <div class="mobile-style__share-images">
+                                    <img src="images/share-img2.webp" alt="" class="mobile-style__share-image">
+                                </div>
+                                <div class="mobile-style__share-text"><span class="mobile-style__share-span">Акция! REX
+                                        14+3</span><br>
+                                    Акция 14+3! Покупайте сухой корм для собак REX NATURAL RANGE упаковку 14 кг и
+                                    получайте еще
+                                    3 кг такого же корма в подарок!</div>
+                            </div>
+                            <div class="mobile-style__share-item">
+                                <div class="mobile-style__share-images">
+                                    <img src="images/share-img3.webp" alt="" class="mobile-style__share-image">
+                                </div>
+                                <div class="mobile-style__share-text"><span class="mobile-style__share-span">Акция!
+                                        Royal Canin</span><br>
+                                    Акция! Royal Canin
+                                    ​​​​​​​При покупке упаковки 2 кг сухого корма Royal Canin - фирменные плед и миска в
+                                    подарок
+                                </div>
+                            </div>
+                            <div class="mobile-style__share-item">
+                                <div class="mobile-style__share-images">
+                                    <img src="images/share-img4.webp" alt="" class="mobile-style__share-image">
+                                </div>
+                                <div class="mobile-style__share-text">
+                                    <span class="mobile-style__share-span">Catsan -25%</span><br>
+                                    Скидка -25% на наполнители для кошачьего туалета Catsan
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-style__search">
+                        <form class="mobile-style__search-form" action="#">
+                            <input class="mobile-style__search-input" type="text" name="" placeholder="Знайти">
+                            <button class="mobile-style__search-btn"></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--TODO:-->
+        <div class="header__main">
+            <div class="header__main-inner">
+                <div class="header__logo"><a href="index.html"><img class="header__logo-img" src="images/logo.png"
+                            alt=""></a></div>
+                <div class="header__catalog-inner">
+                    <div class="header__catalog-list">
+                        <div class="header__catalog-item"><a class="header__catalog-link"
+                                href="index.html#catalog">Собаки</a></div>
+                        <div class="header__catalog-item"><a class="header__catalog-link"
+                                href="index.html#catalog">Кішки</a></div>
+                        <div class="header__catalog-item"><a class="header__catalog-link"
+                                href="index.html#catalog">Птиці</a></div>
+                        <div class="header__catalog-item"><a class="header__catalog-link"
+                                href="index.html#catalog">Гризуни</a></div>
+                        <div class="header__catalog-item"><a class="header__catalog-link"
+                                href="index.html#catalog">Рибки</a></div>
+                        <div class="header__catalog-item"><a class="header__catalog-link"
+                                href="index.html#catalog">Рептилії</a>
+                        </div>
+                        <div class="header__catalog-item"><a class="header__catalog-link" href="index.html#catalog">Інші
+                                тварини</a>
+                        </div>
+                        <div class="header__catalog-item"><a class="header__catalog-link"
+                                href="index.html#catalog">Ветпрепарати</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__texts-advertisemet">
+                    <p class="header__text-ad1">Акція!</p>
+                    <p class="header__text-ad2">Знижки для всіх продуктів бренду <b>PURINA<sup>®</sup></b></p>
+                    <p class="header__text-ad3">
+                    <ul class="header__list-ad">
+                        <li class="header__items-ad">Корм для кішок -30%</li>
+                        <li class="header__items-ad">Корм для собак -25%</li>
+                        <li class="header__items-ad">Корм для поросят -50%</li>
+                        <li class="header__items-ad--active">
+                            <p>*</p>&nbsp; Всю інформацію про поточні акції питайте на рецепції або
+                            за номером <br> телефону який вказаний у контактах
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+                <div class="header__main-img"><img class="header__img2" src="images/feed.png" alt=""></div>
+                <div class="header__main-img"><img class="header__img3" src="images/cloud.png" alt=""></div>
+                <div class="header__main-img"><img class="header__img1" src="images/big-pig.png" alt=""></div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="header__bottom-food">
+                <div class="header__food-item"><img class="header__food-img" src="images/food1.png" alt=""></div>
+                <div class="header__food-item"><img class="header__food-img" src="images/food2.png" alt=""></div>
+                <div class="header__food-item"><img class="header__food-img" src="images/food3.png" alt=""></div>
+                <div class="header__food-item"><img class="header__food-img" src="images/food4.png" alt=""></div>
+                <div class="header__food-item"><img class="header__food-img" src="images/food5.png" alt=""></div>
+                <div class="header__food-item"><img class="header__food-img" src="images/food6.png" alt=""></div>
+                <div class="header__food-item"><img class="header__food-img" src="images/food7.png" alt=""></div>
+                <div class="header__food-item"><img class="header__food-img" src="images/food8.png" alt=""></div>
+            </div>
+            <img class="header__bottom-img" src="images/banner.png" alt="">
+        </div>
+    </header>
+
+    <main class="main">
+        <a name="catalog"></a>
+        <a name="about"></a>
+        <section class="filters-section">
+            <div class="container">
+                <div class="filter-items">
+                    <div class="filter-price">
+                        <div class="filter-price__container">
+                            <h3 class="filter-price__title">Ціна</h3>
+                            <div class="filter-price__slider" id="range-slider"></div>
+                            <div class="filter-price__inputs">
+                                <label for="" class="filter-price__label">
+                                    <span class="filter-price__text">от</span>
+                                    <input type="number" min="10" max="10000" placeholder="10"
+                                        class="filter-price__input" id="input-0">
+                                    <span class="filter-price__text">₴</span>
+                                </label>
+                                <label for="" class="filter-price__label">
+                                    <span class="filter-price__text">до</span>
+                                    <input type="number" min="10" max="10000" placeholder="10000"
+                                        class="filter-price__input" id="input-1">
+                                    <span class="filter-price__text">₴</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__display-flex">
+                        <div class="filter__flex1">
+                            <div class="filter__item-all1"><button class="filter__item1">Клас<img
+                                        src="images/caret-icon.svg" alt="" class="filter__img1"></button>
+                                <div class="filter__dropdown1" data-simplebar>
+                                    <ul class="filter__dropdown-list">
+                                        <li data-f="all" class="filter__dropdown-text">Всі класи</li>
+                                        <li data-f="economy" class="filter__dropdown-text">Економ</li>
+                                        <li data-f="premium" class="filter__dropdown-text">Преміум</li>
+                                        <li data-f="super-premium" class="filter__dropdown-text">Суперпреміум</li>
+                                        <li data-f="holistic" class="filter__dropdown-text">Холістик</li>
+                                        <li data-f="semi-wet" class="filter__dropdown-text">Напіввологий</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter__item-all2"><button
+                                    class="filter__item2 filter__item1--button">Інгредієнти<img
+                                        src="images/caret-icon.svg" alt="" class="filter__img2"></button>
+                                <div class="filter__dropdown2" data-simplebar>
+                                    <ul class="filter__dropdown-list">
+                                        <li data-f="all" class="filter__dropdown-text">Всі інгрідієнти</li>
+                                        <li data-f="economy" class="filter__dropdown-text">Птиця</li>
+                                        <li data-f="premium" class="filter__dropdown-text">Риба</li>
+                                        <li data-f="super-premium" class="filter__dropdown-text">Кролик</li>
+                                        <li data-f="holistic" class="filter__dropdown-text">Качка</li>
+                                        <li data-f="semi-wet" class="filter__dropdown-text">Яловичина</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__flex2">
+                            <div class="filter__item-all3"><button class="filter__item3 filter__item1--button">Вага
+                                    упаковки<img src="images/caret-icon.svg" alt="" class="filter__img3"></button>
+                                <div class="filter__dropdown3" data-simplebar>
+                                    <ul class="filter__dropdown-list">
+                                        <li data-f="all" class="filter__dropdown-text">Вся вага</li>
+                                        <li data-f="economy" class="filter__dropdown-text">На вагу</li>
+                                        <li data-f="premium" class="filter__dropdown-text">До 2 кг</li>
+                                        <li data-f="super-premium" class="filter__dropdown-text">Від 2 до 7 кг</li>
+                                        <li data-f="holistic" class="filter__dropdown-text">Від 7 до 16 кг</li>
+                                        <li data-f="semi-wet" class="filter__dropdown-text">Від 16 кг</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter__item-all4"><button class="filter__item4 filter__item1--button">Розмір
+                                    тварини<img src="images/caret-icon.svg" alt="" class="filter__img4"></button>
+                                <div class="filter__dropdown4" data-simplebar>
+                                    <ul class="filter__dropdown-list">
+                                        <li data-f="all" class="filter__dropdown-text">Всі розміри</li>
+                                        <li data-f="economy" class="filter__dropdown-text">Малий карлик</li>
+                                        <li data-f="premium" class="filter__dropdown-text">Середня</li>
+                                        <li data-f="super-premium" class="filter__dropdown-text">Велика</li>
+                                        <li data-f="holistic" class="filter__dropdown-text">Гігантські</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="flex">
+            <div class="menu">
+                <div class="menu__position">
+                    <div class="menu_wrapper">
+                        <a href="index.html#catalog" class="menu__title">Каталог</a>
+                        <div class="menu__items">
+                            <div class="menu__item menu__item--dog"><img src="images/caret-icon.svg" alt=""
+                                    class="menu__image1">Собаки</div>
+                            <div class="menu__item menu__item--cat"><img src="images/caret-icon.svg" alt=""
+                                    class="menu__image2">Кішки</div>
+                            <div class="menu__item menu__item--bird"><img src="images/caret-icon.svg" alt=""
+                                    class="menu__image3">Птиці</div>
+                            <div class="menu__item menu__item--rodent"><img src="images/caret-icon.svg" alt=""
+                                    class="menu__image4">Гризуни</div>
+                            <div class="menu__item menu__item--fish"><img src="images/caret-icon.svg" alt=""
+                                    class="menu__image5">Рибки</div>
+                            <div class="menu__item menu__item--reptile"><img src="images/caret-icon.svg" alt=""
+                                    class="menu__image6">Рептилії</div>
+                            <div class="menu__item menu__item--other"><img src="images/caret-icon.svg" alt=""
+                                    class="menu__image7">Інші тварини</div>
+                            <div class="menu__item menu__item--drugs"><img src="images/caret-icon.svg" alt=""
+                                    class="menu__image8">Ветпрепарати</div>
+                        </div>
+                        <a href="index.html#about" class="menu__about-us">Про нас</a>
+                        <a href="index.html#about" class="menu__advertisement">Акції</a>
+                    </div>
+                    <div class="menu__drop-window1">
+                        <div class="menu__feed">
+                            <div class="menu__feed-title">Корми</div>
+                            <a href="#" class="menu__feed-text">Сухий корм для собак</a>
+                            <a href="#" class="menu__feed-text">Консерви для собак</a>
+                            <a href="#" class="menu__feed-text">Кісточки та смакоти</a>
+                            <a href="#" class="menu__feed-text">Лікувальні корми</a>
+                        </div>
+                        <div class="menu__health">
+                            <div class="menu__feed-title">Здоров’я</div>
+                            <a href="#" class="menu__feed-text">Вітаміни для собак</a>
+                            <a href="#" class="menu__feed-text">Засіб від блохів і кліщів</a>
+                            <a href="#" class="menu__feed-text">Засіб від глистів</a>
+                        </div>
+                        <div class="menu__other">
+                            <div class="menu__feed-title">Інше</div>
+                            <a href="#" class="menu__feed-text">Аксесуари для собак</a>
+                            <a href="#" class="menu__feed-text">Амуніція для собак</a>
+                            <a href="#" class="menu__feed-text">Іграшки для собак</a>
+                        </div>
+                        <img src="images/dog.png" alt="" class="menu__drop-img1">
+                    </div>
+                    <div class="menu__drop-window2">
+                        <div class="menu__feed">
+                            <div class="menu__feed-title">Корми</div>
+                            <a href="#" class="menu__feed-text">Сухий корм для котів</a>
+                            <a href="#" class="menu__feed-text">Консерви для котів</a>
+                            <a href="#" class="menu__feed-text">Ласощі</a>
+                            <a href="#" class="menu__feed-text">Лікувальні корми</a>
+                        </div>
+                        <div class="menu__health">
+                            <div class="menu__feed-title">Здоров’я</div>
+                            <a href="#" class="menu__feed-text">Вітаміни для котів</a>
+                            <a href="#" class="menu__feed-text">Засіб від блохів і кліщів</a>
+                            <a href="#" class="menu__feed-text">Засіб від глистів</a>
+                        </div>
+                        <div class="menu__other">
+                            <div class="menu__feed-title">Інше</div>
+                            <a href="#" class="menu__feed-text">Аксесуари для котів</a>
+                            <a href="#" class="menu__feed-text">Амуніція для котів</a>
+                            <a href="#" class="menu__feed-text">Іграшки для котів</a>
+                        </div>
+                        <img src="images/cat2.png" alt="" class="menu__drop-img2">
+                    </div>
+                    <div class="menu__drop-window3">
+                        <div class="menu__feed">
+                            <div class="menu__feed-title">Корми</div>
+                            <a href="#" class="menu__feed-text">Корм для птахів</a>
+                            <a href="#" class="menu__feed-text">Ласощі</a>
+                        </div>
+                        <div class="menu__health">
+                            <div class="menu__feed-title">Здоров’я</div>
+                            <a href="#" class="menu__feed-text">Вітаміни</a>
+                            <a href="#" class="menu__feed-text">Вітаміни для птахів</a>
+                        </div>
+                        <div class="menu__other">
+                            <div class="menu__feed-title">Інше</div>
+                            <a href="#" class="menu__feed-text">Клітки для птахів</a>
+                            <a href="#" class="menu__feed-text">Аксесуари для пташиних кліток</a>
+                            <a href="#" class="menu__feed-text">Годівниці для птахів</a>
+                            <a href="#" class="menu__feed-text">Поїлки для птахів</a>
+                        </div>
+                        <img src="images/bird.png" alt="" class="menu__drop-img3">
+                    </div>
+                    <div class="menu__drop-window4">
+                        <div class="menu__feed">
+                            <div class="menu__feed-title">Корми</div>
+                            <a href="#" class="menu__feed-text">Корм для гризунів</a>
+                            <a href="#" class="menu__feed-text">Ласощі для гризунів</a>
+                            <a href="#" class="menu__feed-text">Сіно для гризунів</a>
+                        </div>
+                        <div class="menu__health">
+                            <div class="menu__feed-title">Здоров’я</div>
+                            <a href="#" class="menu__feed-text">Вітаміни</a>
+                            <a href="#" class="menu__feed-text">Вітаміни для гризунів</a>
+                            <a href="#" class="menu__feed-text">Засоби від бліх і кліщів</a>
+                        </div>
+                        <div class="menu__other">
+                            <div class="menu__feed-title">Інше</div>
+                            <a href="#" class="menu__feed-text">Клітки для гризунів</a>
+                            <a href="#" class="menu__feed-text">Аксесуари для гризунів</a>
+                        </div>
+                        <img src="images/xova.png" alt="" class="menu__drop-img4">
+                    </div>
+                    <div class="menu__drop-window5">
+                        <div class="menu__feed">
+                            <div class="menu__feed-title">Корми</div>
+                            <a href="#" class="menu__feed-text">Сухий корм для риб</a>
+                            <a href="#" class="menu__feed-text">Живий корм для риб</a>
+                        </div>
+                        <div class="menu__health">
+                            <div class="menu__feed-title">Здоров’я</div>
+                            <a href="#" class="menu__feed-text">Терморегулятори для акваріума</a>
+                            <a href="#" class="menu__feed-text">Акваріумна хімія</a>
+                        </div>
+                        <div class="menu__other">
+                            <div class="menu__feed-title">Інше</div>
+                            <a href="#" class="menu__feed-text">Акваріуми для рибок</a>
+                            <a href="#" class="menu__feed-text">Фільтри для акваріума</a>
+                            <a href="#" class="menu__feed-text">Компресори для акваріума</a>
+                            <a href="#" class="menu__feed-text">Лампи для аквариума</a>
+                        </div>
+                        <img src="images/fish.png" alt="" class="menu__drop-img5">
+                    </div>
+                    <div class="menu__drop-window6">
+                        <div class="menu__feed">
+                            <div class="menu__feed-title">Корми</div>
+                            <a href="#" class="menu__feed-text">Корм для риптилії</a>
+                            <a href="#" class="menu__feed-text">Корм для риптилій живий</a>
+                        </div>
+                        <div class="menu__health">
+                            <div class="menu__feed-title">Здоров’я</div>
+                            <a href="#" class="menu__feed-text">Терморегулятори для тераріумів</a>
+                            <a href="#" class="menu__feed-text">Прикраси для тераріумів</a>
+                            <a href="#" class="menu__feed-text">Вітаміни для рептилій</a>
+                        </div>
+                        <div class="menu__other">
+                            <div class="menu__feed-title">Інше</div>
+                            <a href="#" class="menu__feed-text">Тераріуми для риптилій</a>
+                            <a href="#" class="menu__feed-text">Наповнювачі</a>
+                            <a href="#" class="menu__feed-text">Освітлення</a>
+                        </div>
+                        <img src="images/snake.png" alt="" class="menu__drop-img6">
+                    </div>
+                    <div class="menu__drop-window7">
+                        <div class="menu__feed">
+                            <div class="menu__feed-title">Корми</div>
+                            <a href="#" class="menu__feed-text">Корм для ставкової риби</a>
+                            <a href="#" class="menu__feed-text">Корм для тхорів</a>
+                        </div>
+                        <div class="menu__health">
+                            <div class="menu__feed-title">Здоров’я</div>
+                            <a href="#" class="menu__feed-text">Хімія для ставків</a>
+                            <a href="#" class="menu__feed-text">Аксесуари для тхорів</a>
+                            <a href="#" class="menu__feed-text">Вітаміни для тхорів</a>
+                        </div>
+                        <div class="menu__other">
+                            <div class="menu__feed-title">Інше</div>
+                            <a href="#" class="menu__feed-text">Освітлення ставка</a>
+                            <a href="#" class="menu__feed-text">Ґрунти для ставків</a>
+                            <a href="#" class="menu__feed-text">Обладнання для ставків</a>
+                        </div>
+                        <img src="images/jaba.png" alt="" class="menu__drop-img7">
+                    </div>
+                    <div class="menu__drop-window8">
+                        <div class="menu__other">
+                            <div class="menu__feed-title">Ветпрепарати</div>
+                            <a href="#" class="menu__feed-text">Від глистів</a>
+                            <a href="#" class="menu__feed-text">Засоби від бліх і кліщів</a>
+                            <a href="#" class="menu__feed-text">Ветеринарні інструменти, матеріали і т.д.</a>
+                            <a href="#" class="menu__feed-text">Для анестезії та заспокійливе</a>
+                            <a href="#" class="menu__feed-text">Для вух</a>
+                            <a href="#" class="menu__feed-text">Для очей</a>
+                            <a href="#" class="menu__feed-text">Протизапальні засоби</a>
+                            <a href="#" class="menu__feed-text">Протигрибкові засоби</a>
+                            <a href="#" class="menu__feed-text">Антибіотики</a>
+                            <a href="#" class="menu__feed-text">Вітаміни</a>
+                            <a href="#" class="menu__feed-text">Вакцини</a>
+                            <a href="#" class="menu__feed-text">Шампуні, мило</a>
+                        </div>
+                        <img src="images/pils.png" alt="" class="menu__drop-img8">
+                    </div>
+                </div>
+            </div>
+            <div class="about-us">
+                <div class="about-us__container">
+                    <div class="about-us__come-back">назад</div>
+                    <div class="about-us__title">Про нас</div>
+                    <div class="about-us__text">
+                        <span class="about-us__text--active">Чем популярен интернет-магазин зоотоваров
+                            "LESSI"?</span><br>
+                        Забота о животных выражается не только в ласке, но и качественном уходе, который включает
+                        полноценное питание, регулярные гигиенические процедуры и медицинское обслуживание домашних
+                        любимцев, поэтому в ассортименте интернет-зоомагазина "LESSI" есть все необходимые для этого
+                        товары. У нас вы найдете корма, уходовые средства, витамины, важнейшие медикаменты, оборудование
+                        для обустройства персонального уголка животного, игрушки, удобные переноски, посуда и прочие
+                        нужные в быту вещи, которые пригодятся для комфортного существования вашего любимца<br>
+                        <span class="about-us__text--active">Для каких животных рассчитан каталог товаров
+                            "LESSI"?</span><br>
+                        Интернет-магазин зоотоваров "LESSI" удовлетворит запросы владельцев следующих животных:
+                        <ul>
+                            <li>собак;</li>
+                            <li>кошек;</li>
+                            <li>птиц;</li>
+                            <li>харьков;</li>
+                            <li>рептилий и обитателей террариума;</li>
+                            <li>лошадей;</li>
+                            <li>различных грызунов;</li>
+                            <li>аквариумных рыбок.</li>
+                        </ul>
+                        Спецпредложения и акционные цены нашего интернет-магазина позволят вам экономить на покупках,
+                        поэтому вы сможете баловать ваших любимцев новыми игрушками, вкусными лакомствами и прочими
+                        приятными вещами без ущерба для кошелька. Выбрав и купив товар, вы гарантировано получите
+                        быструю доставку покупки по указанному адресу. Большой ассортимент продукции на данном сайте
+                        постоянно пополняется актуальными на зоорынке позициями, так как наши менеджеры отслеживают
+                        появление новинок от ведущих производителей зоотоваров. Компания "LESSI" предлагает только
+                        самый качественный товар - у нас вы не найдете подделок и будете уверены в оригинальности
+                        приобретаемой продукции.<br>
+
+                        <span class="about-us__text--active">Почему некоторым животным необходим особенный
+                            уход?</span><br>
+                        Среди экзотических птиц, грызунов, собак или кошек существуют очень редкие породы, требующие
+                        тщательного контроля питания, температуры воздуха или воды, а также соблюдения определенных
+                        условий проживания в доме. Все необходимые для этого атрибуты готов предоставить
+                        интернет-магазин зоотоваров "LESSI". Уход за ослабленными животными также включает свои нюансы:
+                        диетический корм, прием лекарств, витаминов и пищевых добавок, особенные гигиенические процедуры
+                        и т. д. Кроме того, здоровые “младшие друзья” могут доставить немало хлопот хозяевам ввиду
+                        своего природного поведения, а решить эти проблемы вам поможет наш интернет-магазин зоотоваров.
+                        Ликвидаторы неприятных запахов, когтеточки, средства от блох и клещей избавят вас от неприятных
+                        моментов, которые мешают вам общаться с вашими любимцами!
+                    </div>
+                    <div class="about-us__flex-img">
+                        <div class="about-us__images"><img src="images/about-img2.jpg" alt="" class="about-us__img">
+                        </div>
+                        <div class="about-us__images"><img src="images/about-img3.jpg" alt="" class="about-us__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="share">
+                <div class="share__container">
+                    <div class="share__item">
+                        <div class="share__images">
+                            <img src="images/share-img1.webp" alt="" class="share__image">
+                        </div>
+                        <div class="share__text"><span class="share__span">Акция! Josera -15%</span><br>
+                            Акция! Josera -15%
+                            Josera Dog Kids Сухой корм для щенков средних и крупных пород 15 кг
+                            Josera Leger Adult Cухой корм для кошек с сниженными потребностями энергии 10 кг</div>
+                    </div>
+                    <div class="share__item">
+                        <div class="share__images">
+                            <img src="images/share-img2.webp" alt="" class="share__image">
+                        </div>
+                        <div class="share__text"><span class="share__span">Акция! REX 14+3</span><br>
+                            Акция 14+3! Покупайте сухой корм для собак REX NATURAL RANGE упаковку 14 кг и получайте еще
+                            3 кг такого же корма в подарок!</div>
+                    </div>
+                    <div class="share__item">
+                        <div class="share__images">
+                            <img src="images/share-img3.webp" alt="" class="share__image">
+                        </div>
+                        <div class="share__text"><span class="share__span">Акция! Royal Canin</span><br>
+                            Акция! Royal Canin
+                            ​​​​​​​При покупке упаковки 2 кг сухого корма Royal Canin - фирменные плед и миска в подарок
+                        </div>
+                    </div>
+                    <div class="share__item">
+                        <div class="share__images">
+                            <img src="images/share-img4.webp" alt="" class="share__image">
+                        </div>
+                        <div class="share__text">
+                            <span class="share__span">Catsan -25%</span><br>
+                            Скидка -25% на наполнители для кошачьего туалета Catsan
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid">
+                <div class="grid__grid-container grid__grid-container--active">
+                    <ul class="grid__list">
+                        <li class="grid__list-items">
+                            <article class="product box super-premium holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм1.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм для собак весом от 25 кг Brit Care
+                                            GF Adult Large Breed Salmon </a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">1 500</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box premium semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм2.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Club 4
+                                            Paws Premium Adult Large Breeds Сухой
+                                            корм
+                                            для собак
+                                            крупных пород</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">920</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box super-premium holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм3.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм Purina Pro Plan Dog Medium Adult
+                                            Sensitive Skin с лососем и рисом</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">1 765</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box premium semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм4.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм для собак всех пород Savory со
+                                            свежим мясом утки и кроликом 3 кг</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">820</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм5.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм Пан Пес Чемпион для собак всех
+                                            пород со вкусом курицы</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">380</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм6.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Влажный
+                                            диетический корм
+                                            Purina Pro Plan Veterinary Diets</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">450</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм7.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм Purina Dog Chow для взрослых собак
+                                            с лососем 2.5 кг</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">550</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм8.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#"
+                                            class="product_title-name">Беззерновой гипоаллергенный сухой корм для
+                                            собак Ройчер</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">670</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <!--TODO:-->
+                        <li class="grid__list-items">
+                            <article class="product box premium semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм4.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм для собак всех пород Savory со
+                                            свежим мясом утки и кроликом 3 кг</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">820</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм8.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#"
+                                            class="product_title-name">Беззерновой гипоаллергенный сухой корм для
+                                            собак Ройчер</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">670</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box premium semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм2.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Club 4
+                                            Paws Premium Adult Large Breeds Сухой
+                                            корм
+                                            для собак
+                                            крупных пород</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">920</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box super-premium holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм3.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм Purina Pro Plan Dog Medium Adult
+                                            Sensitive Skin с лососем и рисом</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">1 765</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box super-premium holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм1.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм для собак весом от 25 кг Brit Care
+                                            GF Adult Large Breed Salmon </a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">1 500</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм5.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм Пан Пес Чемпион для собак всех
+                                            пород со вкусом курицы</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">380</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм6.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Влажный
+                                            диетический корм
+                                            Purina Pro Plan Veterinary Diets</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">450</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм7.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм Purina Dog Chow для взрослых собак
+                                            с лососем 2.5 кг</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">550</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <!--TODO:-->
+                        <li class="grid__list-items">
+                            <article class="product box premium semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм2.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Club 4
+                                            Paws Premium Adult Large Breeds Сухой
+                                            корм
+                                            для собак
+                                            крупных пород</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">920</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм5.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм Пан Пес Чемпион для собак всех
+                                            пород со вкусом курицы</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">380</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box super-premium holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм3.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм Purina Pro Plan Dog Medium Adult
+                                            Sensitive Skin с лососем и рисом</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">1 765</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм6.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Влажный
+                                            диетический корм
+                                            Purina Pro Plan Veterinary Diets</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">450</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм7.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм Purina Dog Chow для взрослых собак
+                                            с лососем 2.5 кг</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">550</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box super-premium holistic">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм1.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм для собак весом от 25 кг Brit Care
+                                            GF Adult Large Breed Salmon </a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">1 500</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box premium semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм4.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#" class="product_title-name">Сухой
+                                            корм для собак всех пород Savory со
+                                            свежим мясом утки и кроликом 3 кг</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">820</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                        <li class="grid__list-items">
+                            <article class="product box economy semi-wet">
+                                <a href="#" class="product__image"><img class="product__image-src"
+                                        src="images/Корм8.png" alt="Корм"></a>
+                                <h3 class="product_title">
+                                    <div class="product__title-container"><a href="#"
+                                            class="product_title-name">Беззерновой гипоаллергенный сухой корм для
+                                            собак Ройчер</a></div>
+                                </h3>
+                                <div class="product__props">
+                                    <div class="product__reviews">
+                                        <span class="product__rating">5</span> <br>
+                                        <span class="product__textimonials">20 відгуків</span>
+                                    </div>
+                                    <div class="product__info">
+                                        <span class="product__term">Артикул: 879876</span> <br>
+                                        <span class="product__avaliable">Есть в наличии</span>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product-price_current">670</span>&nbsp;₴
+                                        <img src="images/heart.png" alt="heart" class="product__heart-no">
+                                        <img src="images/like.png" alt="heart" class="product__heart-yes">
+                                    </div>
+                                    <button class="product__btn">Добавить в корзину</button>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pagination">
+            <ul id="pagination__list">
+                <li class="pagination__item pagination__arrow pagination__arrow--arr-left">Prev</li>
+                <li class="pagination__item">1</li>
+                <li class="pagination__item">2</li>
+                <li class="pagination__item">3</li>
+                <li class="pagination__item">4</li>
+                <li class="pagination__item">5</li>
+                <li class="pagination__item">6</li>
+                <li class="pagination__item">7</li>
+                <li class="pagination__item">8</li>
+                <li class="pagination__item pagination__arrow pagination__arrow--arr-right">Next</li>
+            </ul>
+        </div>
+    </main>
+    <section class="footer_map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5210.569341701292!2d28.497366328479!3d49.23309179574257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472d5b1387ecc9e1%3A0xd187d0b527bc8a3a!2z0JPQtdGC0YzQvNCw0L0!5e0!3m2!1sru!2sua!4v1621955450171!5m2!1sru!2sua"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__contacts">
+                <div class="footer__dropdown-phone">+38 (093) 411 89 62</div>
+                <div class="footer__dropdown-viber">+38 (063) 452 98 11</div>
+                <div class="footer__dropdown-address">вулиця Брацлавська, 35</div>
+                <div class="footer__dropdown-time"><b>Години роботи:</b><br>
+                    пн-пт з 08:00 до 21:00<br>
+                    сб-нд - вихідні дні.
+                </div>
+            </div>
+            <div class="footer__social">
+                <div class="footer__social-title">Ми в соцільних мережах:</div>
+                <div class="footer__social-images">
+                    <img src="images/twitter.png" alt="twitter" class="footer__social-img">
+                    <img src="images/instagram.png" alt="instagram" class="footer__social-img">
+                    <img src="images/facebook.png" alt="facebook" class="footer__social-img">
+                </div>
+            </div>
+            <div class="footer__links1">
+                <ul class="footer__list-links">
+                    <li class="footer__list-item"><a href="#" class="footer__link footer__link--active">Клієнтам</a>
+                    </li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Вхід до кабінету</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Про нас</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Оплата і доставка</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Угода користувача</a></li>
+                </ul>
+            </div>
+            <div class="footer__links2">
+                <ul class="footer__list-links">
+                    <li class="footer__list-item"><a href="#" class="footer__link footer__link--active">Каталог</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Собаки</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Кішки</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Птиці</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Гризуни</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Рибки</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Рептілії</a></li>
+                    <li class="footer__list-item"><a href="#" class="footer__link">Інші тварини</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                © 2021 Сайт ветаптеки.
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal">
+        <div class="modal__container order-modal" role="dialog" aria-modal="true" data-target="modal">
+            <div class="modal-content order-modal__content">
+                <div class="order-modal__top">
+                    <h2 class="order-modal__title">Оформление заказа</h2>
+                    <span class="order-modal__number">Заказ № 345</span>
+                </div>
+                <div class="order-modal__info">
+                    <div class="order-modal__quantity order-modal__info-item">Товаров в заказе: <span></span></div>
+                    <div class="order-modal__summ order-modal__info-item">Общая сумма заказа: <span></span>
+                    </div>
+                    <div class="order-modal__products order-modal__info-item">
+                        <button class="order-modal__btn">Состав заказа</button>
+                        <ul class="order-modal__list">
+                            <!--<li class="order-modal__item">
+								<article class="order-modal__product order-product">
+									<img src="" alt="" class="order-product__img">
+									<div class="order-product__text">
+										<h3 class="order-product__title"></h3>
+										<span class="order-product__price"></span>
+									</div>
+									<button class="order-product__delete">Удалить</button>
+								</article>
+                                </li> -->
+                        </ul>
+                    </div>
+                </div>
+                <form action="#" class="order-modal__form order">
+                    <input type="hidden" name="theme" value="Обратный звонок">
+                    <input type="hidden" name="admin_email[]" value="TienxShan@gmail.com">
+                    <input type="hidden" name="form_subject" value="Заявка с сайта Сайт">
+                    <label class="order__label">
+                        <span class="order__text">Ваше имя</span>
+                        <input type="text" name="Имя" class="order__input">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Номер телефона</span>
+                        <input type="tel" name="Телефон" class="order__input" placeholder="+38 (___)___-__-__">
+                    </label>
+                    <label class="order__label">
+                        <span class="order__text">Ваша почта</span>
+                        <input type="email" name="Email" class="order__input" placeholder="TienxShan@gmail.com">
+                    </label>
+                    <button class="order__btn">Оформить заказ</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/nouislider.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

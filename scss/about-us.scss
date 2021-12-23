@@ -1,0 +1,71 @@
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+$color1: #f3861a;
+
+.about-us {
+    display: none;
+}
+
+.about-us__container {
+    position: relative;
+    top: -100px;
+    padding: 20px 20px 0px 20px;
+    margin-bottom: 50px;
+} 
+
+.about-us__title {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: $Rubik;
+    text-align: center;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+
+.about-us__text {
+    text-align: justify;
+    font-family: $Rubik;
+}
+
+.about-us__text--active {
+    display: block;
+    padding: 20px 0px 0px 30px;
+    font-size: 20px;
+    font-family: $Rubik;    
+    color: $color1;
+}
+
+.about-us__img {
+    width: 350px;
+    height: 200px;
+    transition: 0.5s;
+    box-shadow: 0px 5px 10px 8px rgba(34, 60, 80, 0.2);
+    cursor: zoom-in;
+    &:first-child {
+        margin-right: 100px;
+    }
+    &:hover {
+        transform: scale(1.5);
+    }
+}
+
+.about-us__flex-img {
+    display: flex;
+    position: absolute;
+    z-index: 2;
+    margin: 30px 10px 10px 10px;
+}
+
+.about-us__come-back {
+    cursor: pointer;
+    position: absolute;
+    left: 50px;
+    font-family: $Rubik;
+    font-size: 13px;
+    border-bottom: 1px dashed rgba(128, 128, 128, 0.788);
+    color: rgba(128, 128, 128, 0.788);
+    &:hover {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.788);
+    }
+}

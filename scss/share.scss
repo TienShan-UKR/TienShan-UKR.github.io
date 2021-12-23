@@ -1,0 +1,45 @@
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+$color1: #f3861a;
+
+.share {
+    display: none;
+}
+
+.share__container {
+    position: relative;
+    top: -98px;
+    margin-bottom: -216px;
+}
+
+.share__item {
+    border-top: 1px solid rgba(128, 128, 128, 0.459);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.459);
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.share__image {
+    min-width: 550px;
+    height: 250px;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.share__text {
+    padding: 10px;
+    font-size: 15px;
+    font-family: $Rubik;
+    max-width: 100%;
+    height: auto;
+    text-align: justify;
+}
+
+.share__span {
+    font-size: 20px;
+    color: $color1;
+    text-align: center;
+    display: block;
+}

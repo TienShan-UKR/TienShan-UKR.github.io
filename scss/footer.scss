@@ -1,0 +1,150 @@
+$color1: #f3861a;
+$Roboto: 'Roboto', sans-serif;
+$Oswald: 'Oswald', sans-serif;
+$Rubik: 'Rubik', sans-serif;
+
+
+
+.copyright {
+  color: #555555;
+  font-size: 13px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: normal;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 103%;
+}
+
+.footer__contacts {
+  font-family: $Rubik;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 270px;
+  position: relative;
+}
+
+.footer_map {
+  padding-top: 50px;
+  width: 100%;
+  height: 300px;
+}
+
+.footer__dropdown-phone::before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+  background: url('../images/phone.png') no-repeat center center;
+  background-size: cover;
+}
+
+.footer__dropdown-viber::before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+  background: url('../images/viber.png') no-repeat center center;
+  background-size: cover;
+}
+
+.footer__dropdown-address::before {
+  content: '';
+  position: absolute;
+  left: 23px;
+  width: 25px;
+  height: 25px;
+  background: url('../images/location.png') no-repeat center center;
+  background-size: cover;
+}
+
+.footer__dropdown-time::before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  width: 25px;
+  height: 25px;
+  background: url('../images/clock.png') no-repeat center center;
+  background-size: cover;
+}
+
+.footer__dropdown-phone {
+  margin-left: 45px;
+  padding: 10px;
+}
+
+.footer__dropdown-viber {
+  margin-left: 45px;
+  padding: 10px;
+}
+
+.footer__dropdown-address {
+  margin-left: 45px;
+  padding: 10px;
+}
+
+.footer__dropdown-time {
+  margin-left: 45px;
+  padding: 10px;
+}
+
+.footer__social {
+    margin-top: 27px;
+}
+
+.footer__social-img {
+    width: 35px;
+    height: 34px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.footer__social-images {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer__social-title {
+    font-family: $Rubik;
+    font-size: 16px;
+}
+
+.footer__link {
+    font-family: $Rubik;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px dashed #444; 
+    &:hover {
+      border-bottom: 1px solid #444; 
+    }
+}
+
+.footer__links1 {
+    margin-top: 22px;
+    margin-left: 150px;
+}
+
+.footer__links2 {
+    margin-top: 20px;
+    margin-right: 100px;
+}
+
+.footer__list-links {
+    text-align: center;
+}
+
+.footer__link--active {
+    color: gray;
+    border: none;
+    font-size: 20px;
+}
